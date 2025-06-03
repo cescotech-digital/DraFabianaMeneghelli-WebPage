@@ -1,0 +1,687 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clínica de Estética Dra. Fabiana Meneghelli | Harmonização Facial em Itajaí-SC e Região</title>
+    <meta name="description" content="Tratamentos de estética e harmonização facial com naturalidade e sofisticação. Agende uma avaliação com a Dra. Fabiana Meneghelli." />
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Clínica Dra. Fabiana Meneghelli" />
+    <meta property="og:description" content="Beleza natural, leveza e resultados harmônicos. Conheça nossa clínica." />
+    <!--TODO-->
+    <meta property="og:image" content="/imagem-compartilhamento.jpg" />
+    <meta property="og:type" content="website" />
+    <!--TODO-->
+    <meta property="og:url" content="https://www.seusite.com.br" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Clínica Dra. Fabiana Meneghelli" />
+    <meta name="twitter:description" content="Beleza natural, leveza e resultados harmônicos." />
+    <!--TODO-->
+    <meta name="twitter:image" content="/imagem-compartilhamento.jpg" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              gold: '#C6A97C',
+              background: '#FDF9F6',
+              text: '#4B4B4B'
+            },
+            fontFamily: {
+              serif: ['"Playfair Display"', 'serif'],
+              sans: ['"Inter"', 'sans-serif']
+            }
+          }
+        }
+      }
+    </script>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bg-white text-text font-sans leading-relaxed antialiased">
+    
+    <!-- HEADER -->
+    
+    <header class="fixed w-full bg-white shadow-sm z-50">
+      <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <nav class="hidden md:flex space-x-8 text-sm font-medium text-gray-700">
+          <a href="#sobre" class="hover:text-gold transition duration-300">Sobre</a>
+          <a href="#servicos" class="hover:text-gold transition duration-300">Serviços</a>
+          <a href="#diferenciais" class="hover:text-gold transition duration-300">Diferenciais</a>
+        </nav>
+        <a href="#">
+          <img src="images/Fmm-Logo-4.png" alt="Dra. Fabiana Meneghelli" class="h-16" />
+        </a>
+        <div class="hidden md:flex items-center space-x-4">
+          <a href="#depoimentos" class="hover:text-gold transition duration-300">Depoimentos</a>
+          <a href="#contato" class="hover:text-gold transition duration-300">Contato</a>
+          <button class="ml-4 bg-gold text-white px-5 py-2 rounded-full text-sm hover:bg-opacity-90 transition">Agendar Consulta</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="pt-32 px-4">
+      
+      <section class="relative pt-28 pb-20 md:pt-40 md:pb-32 overflow-hidden">
+        <!-- Imagem de fundo -->
+        <div class="absolute inset-0 z-0">
+          <img 
+            src="images/clinica.jpg" 
+            alt="Dra. Fabiana Meneghelli em sua clínica de estética em Itajaí-SC e Região" 
+            class="w-full h-full object-cover object-top"
+          />
+          <!-- Gradiente branco à esquerda para suavizar o texto -->
+          <div class="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-transparent"></div>
+        </div>
+      
+        <!-- Conteúdo em destaque -->
+        <div class="container mx-auto px-4 relative z-10">
+          <div class="max-w-xl">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-light text-gray-800 mb-6 leading-tight">
+              Sua essência, realçada com leveza e naturalidade
+            </h1>
+            <p class="text-lg md:text-xl text-gray-600 mb-8 font-light">
+              Descubra o cuidado personalizado que valoriza sua beleza natural, com tratamentos exclusivos e resultados harmônicos.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <button class="bg-[#C6A97C] text-white px-8 py-3 rounded-full text-sm font-medium hover:bg-opacity-90 transition-all duration-300">
+                Agendar Consulta
+              </button>
+              <button class="border border-[#C6A97C] text-[#C6A97C] px-8 py-3 rounded-full text-sm font-medium hover:bg-[#C6A97C] hover:bg-opacity-10 transition-all duration-300">
+                Conheça Nossos Serviços
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SOBRE -->
+      <section id="sobre" class="py-20 bg-[#FDF9F6]">
+        <div class="container mx-auto px-4">
+          <div class="flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-5/12 overflow-hidden rounded-lg">
+              <img src="images/dra-fabiana.jpg" alt="Dra. Fabiana Meneghelli" class="w-full h-full object-cover object-top" />
+            </div>
+            <div class="md:w-7/12">
+              <h2 class="text-3xl md:text-4xl font-serif text-gray-800 mb-6">Dra. Fabiana M. Meneghelli</h2>
+              <div class="w-20 h-1 bg-[#C6A97C] mb-8"></div>
+              <p class="text-gray-600 mb-6 leading-relaxed">
+                Biomédica especialista em estética avançada e harmonização facial, com mais de 10 anos de experiência dedicados à beleza que respeita a naturalidade de cada rosto.
+              </p>
+              <p class="text-gray-600 mb-6 leading-relaxed">
+                Formada pela Universidade de São Paulo com especialização em procedimentos estéticos minimamente invasivos, a Dra. Fabiana desenvolveu uma abordagem única que valoriza a individualidade de cada paciente.
+              </p>
+              <p class="text-gray-600 mb-8 leading-relaxed">
+                Sua filosofia de trabalho é baseada na compreensão profunda das necessidades de cada pessoa, criando protocolos personalizados que realçam a beleza natural, proporcionando resultados harmônicos e duradouros.
+              </p>
+              <div class="flex flex-wrap gap-4 mt-4">
+                <div class="flex items-center">
+                  <i class="fas fa-award text-[#C6A97C] mr-2"></i>
+                  <span class="text-gray-700 text-sm">Especialista em Harmonização Facial</span>
+                </div>
+                <div class="flex items-center">
+                  <i class="fas fa-certificate text-[#C6A97C] mr-2"></i>
+                  <span class="text-gray-700 text-sm">Membro da Sociedade Brasileira de Estética</span>
+                </div>
+                <div class="flex items-center">
+                  <i class="fas fa-user-md text-[#C6A97C] mr-2"></i>
+                  <span class="text-gray-700 text-sm">Mais de 5.000 procedimentos realizados</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- SERVICOS -->
+      <section id="servicos" class="py-20">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-serif text-gray-800 mb-4">Nossos Serviços</h2>
+            <div class="w-20 h-1 bg-[#C6A97C] mx-auto mb-6"></div>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+              Oferecemos tratamentos personalizados que valorizam sua beleza natural, com técnicas avançadas e produtos de alta qualidade.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Serviço 1 -->
+            <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 border border-gray-100">
+              <div class="w-16 h-16 bg-[#FDF9F6] rounded-full flex items-center justify-center mb-6">
+                <i class="fas fa-magic text-[#C6A97C] text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-serif text-gray-800 mb-4">Harmonização Facial</h3>
+              <p class="text-gray-600 mb-6">
+                Conjunto de procedimentos que visam equilibrar os traços faciais, proporcionando resultados naturais e harmônicos, respeitando as características individuais.
+              </p>
+              <a href="#" class="text-[#C6A97C] font-medium inline-flex items-center cursor-pointer">
+                Saiba mais <i class="fas fa-arrow-right ml-2 text-sm"></i>
+              </a>
+            </div>
+
+            <!-- Serviço 2 -->
+            <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 border border-gray-100">
+              <div class="w-16 h-16 bg-[#FDF9F6] rounded-full flex items-center justify-center mb-6">
+                <i class="fas fa-syringe text-[#C6A97C] text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-serif text-gray-800 mb-4">Toxina Botulínica</h3>
+              <p class="text-gray-600 mb-6">
+                Tratamento que suaviza linhas de expressão e previne o envelhecimento, proporcionando um aspecto rejuvenescido sem perder a naturalidade das expressões.
+              </p>
+              <a href="#" class="text-[#C6A97C] font-medium inline-flex items-center cursor-pointer">
+                Saiba mais <i class="fas fa-arrow-right ml-2 text-sm"></i>
+              </a>
+            </div>
+
+            <!-- Serviço 3 -->
+            <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 border border-gray-100">
+              <div class="w-16 h-16 bg-[#FDF9F6] rounded-full flex items-center justify-center mb-6">
+                <i class="fas fa-fill-drip text-[#C6A97C] text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-serif text-gray-800 mb-4">Preenchimento Facial</h3>
+              <p class="text-gray-600 mb-6">
+                Recupera o volume facial perdido com o tempo, preenche sulcos e melhora o contorno, devolvendo a jovialidade com resultados imediatos.
+              </p>
+              <a href="#" class="text-[#C6A97C] font-medium inline-flex items-center cursor-pointer">
+                Saiba mais <i class="fas fa-arrow-right ml-2 text-sm"></i>
+              </a>
+            </div>
+
+            <!-- Serviço 4 -->
+            <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 border border-gray-100">
+              <div class="w-16 h-16 bg-[#FDF9F6] rounded-full flex items-center justify-center mb-6">
+                <i class="fas fa-dna text-[#C6A97C] text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-serif text-gray-800 mb-4">Bioestimulador de Colágeno</h3>
+              <p class="text-gray-600 mb-6">
+                Estimula a produção natural de colágeno, melhorando a firmeza e elasticidade da pele, com resultados progressivos e duradouros.
+              </p>
+              <a href="#" class="text-[#C6A97C] font-medium inline-flex items-center cursor-pointer">
+                Saiba mais <i class="fas fa-arrow-right ml-2 text-sm"></i>
+              </a>
+            </div>
+
+            <!-- Serviço 5 -->
+            <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 border border-gray-100">
+              <div class="w-16 h-16 bg-[#FDF9F6] rounded-full flex items-center justify-center mb-6">
+                <i class="fas fa-tint text-[#C6A97C] text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-serif text-gray-800 mb-4">Skinbooster</h3>
+              <p class="text-gray-600 mb-6">
+                Hidratação profunda que melhora a qualidade da pele, aumentando sua luminosidade, textura e elasticidade, ideal para todos os tipos de pele.
+              </p>
+              <a href="#" class="text-[#C6A97C] font-medium inline-flex items-center cursor-pointer">
+                Saiba mais <i class="fas fa-arrow-right ml-2 text-sm"></i>
+              </a>
+            </div>
+
+            <!-- Serviço 6 -->
+            <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 border border-gray-100">
+              <div class="w-16 h-16 bg-[#FDF9F6] rounded-full flex items-center justify-center mb-6">
+                <i class="fas fa-spa text-[#C6A97C] text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-serif text-gray-800 mb-4">Cuidados com a Pele</h3>
+              <p class="text-gray-600 mb-6">
+                Protocolos personalizados para tratamento e prevenção de problemas cutâneos, com produtos e técnicas avançadas para uma pele saudável.
+              </p>
+              <a href="#" class="text-[#C6A97C] font-medium inline-flex items-center cursor-pointer">
+                Saiba mais <i class="fas fa-arrow-right ml-2 text-sm"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="text-center mt-12">
+            <button class="bg-[#C6A97C] text-white px-8 py-3 rounded-full text-sm font-medium hover:bg-opacity-90 transition">
+              Ver Todos os Serviços
+            </button>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- DIFERENCIAS -->
+      <section id="diferenciais" class="py-20 bg-[#FDF9F6]">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-serif text-gray-800 mb-4">Nossos Diferenciais</h2>
+            <div class="w-20 h-1 bg-[#C6A97C] mx-auto mb-6"></div>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+              O que torna nossa clínica única e especial para cuidar da sua beleza.
+            </p>
+          </div>
+      
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Diferencial 1 -->
+            <div class="text-center p-6">
+              <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm">
+                <i class="fas fa-user-md text-[#C6A97C] text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-serif text-gray-800 mb-4">Atendimento Personalizado</h3>
+              <p class="text-gray-600">
+                Cada paciente recebe um protocolo exclusivo, desenvolvido após análise detalhada das suas necessidades e objetivos estéticos.
+              </p>
+            </div>
+      
+            <!-- Diferencial 2 -->
+            <div class="text-center p-6">
+              <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm">
+                <i class="fas fa-gem text-[#C6A97C] text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-serif text-gray-800 mb-4">Ambiente Acolhedor</h3>
+              <p class="text-gray-600">
+                Nossa clínica foi projetada para proporcionar conforto e tranquilidade, com espaços elegantes e aconchegantes para sua experiência.
+              </p>
+            </div>
+      
+            <!-- Diferencial 3 -->
+            <div class="text-center p-6">
+              <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm">
+                <i class="fas fa-award text-[#C6A97C] text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-serif text-gray-800 mb-4">Excelência Técnica</h3>
+              <p class="text-gray-600">
+                Utilizamos as técnicas mais avançadas e produtos de alta qualidade, garantindo resultados seguros, naturais e duradouros.
+              </p>
+            </div>
+          </div>
+      
+          <div class="mt-16 bg-white p-8 rounded-lg shadow-sm">
+            <div class="flex flex-col md:flex-row items-center">
+              <div class="md:w-7/12 md:pr-8 mb-8 md:mb-0">
+                <h3 class="text-2xl font-serif text-gray-800 mb-4">Experiência Transformadora</h3>
+                <p class="text-gray-600 mb-6">
+                  Na clínica Dra. Fabiana Meneghelli, acreditamos que a verdadeira beleza está em realçar o que você tem de melhor, respeitando sua individualidade.
+                </p>
+                <p class="text-gray-600 mb-6">
+                  Nossa abordagem integra técnicas avançadas com um olhar humanizado, criando uma jornada de transformação que vai além da estética, promovendo bem-estar e autoconfiança.
+                </p>
+                <button class="bg-[#C6A97C] text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-opacity-90 transition">
+                  Conheça Nossa Filosofia
+                </button>
+              </div>
+              <div class="md:w-5/12">
+                <img 
+                  src="https://readdy.ai/api/search-image?query=Elegant%20aesthetic%20clinic%20reception%20area%20with%20soft%20lighting%2C%20gold%20accents%2C%20comfortable%20seating%20in%20nude%20tones%2C%20fresh%20flowers%2C%20and%20a%20sophisticated%20atmosphere%20that%20conveys%20luxury%20and%20tranquility&width=600&height=400&seq=clinic-interior-1&orientation=landscape" 
+                  alt="Clínica Dra. Fabiana Meneghelli" 
+                  class="w-full h-full object-cover object-top rounded-lg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- DEPOIMENTOS -->
+      <section id="depoimentos" class="py-20">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-serif text-gray-800 mb-4">Depoimentos</h2>
+            <div class="w-20 h-1 bg-[#C6A97C] mx-auto mb-6"></div>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+              O que nossas pacientes dizem sobre suas experiências e resultados.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Depoimento 1 -->
+            <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
+              <div class="text-[#C6A97C] text-4xl font-serif mb-6">"</div>
+              <p class="text-gray-600 italic mb-6">
+                Encontrei na Dra. Fabiana uma profissional que realmente entendeu o que eu queria. Os resultados foram naturais e todos perceberam como estou mais radiante, sem exageros. Me sinto mais confiante e feliz.
+              </p>
+              <div class="flex items-center">
+                <div class="w-12 h-12 bg-[#F7E6E6] rounded-full flex items-center justify-center mr-4">
+                  <span class="text-[#C6A97C] font-medium">CM</span>
+                </div>
+                <div>
+                  <h4 class="text-gray-800 font-medium">Carolina Mendes</h4>
+                  <p class="text-gray-500 text-sm">42 anos, empresária</p>
+                </div>
+              </div>
+              <div class="mt-4 flex text-[#C6A97C]">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+
+            <!-- Depoimento 2 -->
+            <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
+              <div class="text-[#C6A97C] text-4xl font-serif mb-6">"</div>
+              <p class="text-gray-600 italic mb-6">
+                Depois de pesquisar muito, escolhi a clínica da Dra. Fabiana e não me arrependo. O ambiente é acolhedor, o atendimento é impecável e os resultados superaram minhas expectativas. Recomendo a todas as minhas amigas.
+              </p>
+              <div class="flex items-center">
+                <div class="w-12 h-12 bg-[#F7E6E6] rounded-full flex items-center justify-center mr-4">
+                  <span class="text-[#C6A97C] font-medium">LS</span>
+                </div>
+                <div>
+                  <h4 class="text-gray-800 font-medium">Luciana Santos</h4>
+                  <p class="text-gray-500 text-sm">35 anos, advogada</p>
+                </div>
+              </div>
+              <div class="mt-4 flex text-[#C6A97C]">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+
+            <!-- Depoimento 3 -->
+            <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
+              <div class="text-[#C6A97C] text-4xl font-serif mb-6">"</div>
+              <p class="text-gray-600 italic mb-6">
+                Tinha receio de fazer procedimentos estéticos, mas a Dra. Fabiana me deixou muito segura. O resultado foi tão natural que ninguém percebeu que fiz algo, apenas comentam como estou bem e descansada.
+              </p>
+              <div class="flex items-center">
+                <div class="w-12 h-12 bg-[#F7E6E6] rounded-full flex items-center justify-center mr-4">
+                  <span class="text-[#C6A97C] font-medium">RF</span>
+                </div>
+                <div>
+                  <h4 class="text-gray-800 font-medium">Renata Ferreira</h4>
+                  <p class="text-gray-500 text-sm">29 anos, jornalista</p>
+                </div>
+              </div>
+              <div class="mt-4 flex text-[#C6A97C]">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center mt-12">
+            <button class="border border-[#C6A97C] text-[#C6A97C] px-8 py-3 rounded-full text-sm font-medium hover:bg-[#C6A97C] hover:text-white transition">
+              Ver Mais Depoimentos
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->      
+      <section class="py-20 bg-[#C6A97C] text-white">
+        <div class="container mx-auto px-4 text-center">
+          <h2 class="text-3xl md:text-4xl font-serif mb-6">
+            Comece sua transformação hoje
+          </h2>
+          <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto opacity-90">
+            Agende uma consulta de avaliação e descubra como podemos realçar sua beleza natural com tratamentos personalizados.
+          </p>
+          <button class="bg-white text-[#C6A97C] px-8 py-3 rounded-full text-sm font-medium hover:bg-opacity-90 transition-all duration-300">
+            Agendar Consulta
+          </button>
+        </div>
+      </section>
+      
+      <!-- CONTATO -->
+      <section id="contato" class="py-20">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-serif text-gray-800 mb-4">Entre em Contato</h2>
+            <div class="w-20 h-1 bg-[#C6A97C] mx-auto mb-6"></div>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+              Estamos à disposição para esclarecer suas dúvidas e agendar sua consulta.
+            </p>
+          </div>
+      
+          <div class="flex flex-col md:flex-row gap-12">
+            <!-- Informações de Contato -->
+            <div class="md:w-1/2">
+              <div class="bg-white p-8 rounded-lg shadow-sm h-full">
+                <h3 class="text-2xl font-serif text-gray-800 mb-6">Informações de Contato</h3>
+      
+                <div class="space-y-6">
+                  <div class="flex flex-col items-start gap-4">
+                    <div class="flex items-start">
+                      <div class="w-10 h-10 bg-[#FDF9F6] rounded-full flex items-center justify-center mr-4 mt-1">
+                        <i class="fas fa-map-marker-alt text-[#C6A97C]"></i>
+                      </div>
+                      <div>
+                        <h4 class="text-gray-800 font-medium mb-2">Endereço</h4>
+                        <p class="text-gray-600">
+                          Rua João Bauer, 498, Sala 609 <br /> 
+                          Centro, Itajaí - SC <br/>
+                          CEP: 88301-500
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- Mapa do Google incorporado -->
+                    <div class="w-full mt-2">
+                      <iframe
+                        src="https://www.google.com/maps?q=Rua%20Jo%C3%A3o%20Bauer%2C%20498%2C%20Sala%20609%2C%20Itaja%C3%AD%20-%20SC&output=embed"
+                        width="100%"
+                        height="200"
+                        class="rounded-lg border border-gray-200"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                      ></iframe>
+                    </div>
+                  </div>
+      
+                  <div class="flex items-start">
+                    <div class="w-10 h-10 bg-[#FDF9F6] rounded-full flex items-center justify-center mr-4 mt-1">
+                      <i class="fas fa-phone-alt text-[#C6A97C]"></i>
+                    </div>
+                    <div>
+                      <h4 class="text-gray-800 font-medium mb-2">Telefone</h4>
+                      <p class="text-gray-600">
+                        (47) 99162-6678 (WhatsApp)
+                      </p>
+                    </div>
+                  </div>
+      
+                  <div class="flex items-start">
+                    <div class="w-10 h-10 bg-[#FDF9F6] rounded-full flex items-center justify-center mr-4 mt-1">
+                      <i class="fas fa-envelope text-[#C6A97C]"></i>
+                    </div>
+                    <div>
+                      <h4 class="text-gray-800 font-medium mb-2">E-mail</h4>
+                      <p class="text-gray-600">
+                        contato@drafabianameneghelli.com.br<br />
+                        atendimento@drafabianameneghelli.com.br
+                      </p>
+                    </div>
+                  </div>
+      
+                  <div class="flex items-start">
+                    <div class="w-10 h-10 bg-[#FDF9F6] rounded-full flex items-center justify-center mr-4 mt-1">
+                      <i class="fas fa-clock text-[#C6A97C]"></i>
+                    </div>
+                    <div>
+                      <h4 class="text-gray-800 font-medium mb-2">Horário de Atendimento</h4>
+                      <p class="text-gray-600">
+                        Segunda a sexta: 9h às 19h<br />
+                        Sábado: 9h às 14h<br />
+                        Domingo: Fechado
+                      </p>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="mt-8">
+                  <h4 class="text-gray-800 font-medium mb-4">Siga-nos</h4>
+                  <div class="flex space-x-4">
+                    <a href="#" class="w-10 h-10 bg-[#FDF9F6] rounded-full flex items-center justify-center hover:bg-[#C6A97C] hover:text-white transition-all">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 bg-[#FDF9F6] rounded-full flex items-center justify-center hover:bg-[#C6A97C] hover:text-white transition-all">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 bg-[#FDF9F6] rounded-full flex items-center justify-center hover:bg-[#C6A97C] hover:text-white transition-all">
+                      <i class="fab fa-youtube"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Formulário de Contato -->
+            <div class="md:w-1/2">
+              <div class="bg-white p-8 rounded-lg shadow-sm">
+                <h3 class="text-2xl font-serif text-gray-800 mb-6">Envie uma Mensagem</h3>
+      
+                <form>
+                  <div class="mb-4">
+                    <label for="name" class="block text-gray-700 mb-2 text-sm">Nome completo</label>
+                    <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-[#C6A97C] focus:ring-1 focus:ring-[#C6A97C] outline-none transition-all" placeholder="Seu nome" />
+                  </div>
+      
+                  <div class="mb-4">
+                    <label for="email" class="block text-gray-700 mb-2 text-sm">E-mail</label>
+                    <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-[#C6A97C] focus:ring-1 focus:ring-[#C6A97C] outline-none transition-all" placeholder="Seu e-mail" />
+                  </div>
+      
+                  <div class="mb-4">
+                    <label for="phone" class="block text-gray-700 mb-2 text-sm">Telefone</label>
+                    <input type="tel" id="phone" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-[#C6A97C] focus:ring-1 focus:ring-[#C6A97C] outline-none transition-all" placeholder="Seu telefone" />
+                  </div>
+      
+                  <div class="mb-4">
+                    <label for="subject" class="block text-gray-700 mb-2 text-sm">Assunto</label>
+                    <select id="subject" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-[#C6A97C] focus:ring-1 focus:ring-[#C6A97C] outline-none bg-white transition-all">
+                      <option value="">Selecione o assunto</option>
+                      <option value="agendamento">Agendamento de consulta</option>
+                      <option value="duvida">Dúvidas sobre procedimentos</option>
+                      <option value="orcamento">Solicitação de orçamento</option>
+                      <option value="outro">Outro assunto</option>
+                    </select>
+                  </div>
+      
+                  <div class="mb-6">
+                    <label for="message" class="block text-gray-700 mb-2 text-sm">Mensagem</label>
+                    <textarea id="message" rows="5" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-[#C6A97C] focus:ring-1 focus:ring-[#C6A97C] outline-none resize-none transition-all" placeholder="Sua mensagem"></textarea>
+                  </div>
+      
+                  <button type="submit" class="w-full bg-[#C6A97C] text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-opacity-90 transition-all">
+                    Enviar Mensagem
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between mb-12">
+          <!-- Logo e Descrição -->
+          <div class="mb-8 md:mb-0 md:w-1/3">
+            <img src="images/Fmm-Logo-4.png" alt="Dra. Fabiana Meneghelli" class="h-16 mb-6" />
+            <p class="text-gray-400 mb-6 max-w-sm">
+              Clínica especializada em harmonização facial e procedimentos estéticos avançados, com foco em resultados naturais e personalizados.
+            </p>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                <i class="fab fa-instagram text-xl"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                <i class="fab fa-facebook-f text-xl"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                <i class="fab fa-youtube text-xl"></i>
+              </a>
+            </div>
+          </div>
+    
+          <!-- Links Rápidos -->
+          <div class="mb-8 md:mb-0 md:w-1/5">
+            <h4 class="text-lg font-medium mb-4">Links Rápidos</h4>
+            <ul class="space-y-3">
+              <li><a href="#sobre" class="text-gray-400 hover:text-white transition-colors">Sobre</a></li>
+              <li><a href="#servicos" class="text-gray-400 hover:text-white transition-colors">Serviços</a></li>
+              <li><a href="#depoimentos" class="text-gray-400 hover:text-white transition-colors">Depoimentos</a></li>
+              <li><a href="#contato" class="text-gray-400 hover:text-white transition-colors">Contato</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+            </ul>
+          </div>
+    
+          <!-- Serviços -->
+          <div class="mb-8 md:mb-0 md:w-1/5">
+            <h4 class="text-lg font-medium mb-4">Serviços</h4>
+            <ul class="space-y-3">
+              <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Harmonização Facial</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Toxina Botulínica</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Preenchimento</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Bioestimulador</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Skinbooster</a></li>
+            </ul>
+          </div>
+    
+          <!-- Contato -->
+          <div class="md:w-1/4">
+            <h4 class="text-lg font-medium mb-4">Contato</h4>
+            <ul class="space-y-3 text-gray-400">
+              <li class="flex item, <i class <"fas fa-map-marker-alt mt-1 mr-3 text-[#C6A97C]"></i>
+                Rua João Bauer, 498, Sala 609. Centro, Itajaí - SC, CEP: 88301-500.
+              </li>
+              <li class="flex items-start">
+                <i class="fab fa-whatsapp mt-1 mr-3 text-[#C6A97C]"></i>
+                (47) 99162-6678
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-envelope mt-1 mr-3 text-[#C6A97C]"></i>
+                contato@drafabianameneghelli.com.br
+              </li>
+            </ul>
+          </div>
+        </div>
+    
+        <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
+          <p class="text-gray-500 text-sm mb-4 md:mb-0">
+            &copy; 2025 Dra. Fabiana Meneghelli. Todos os direitos reservados.
+          </p>
+          <div class="flex space-x-6">
+            <a href="#" class="text-gray-500 hover:text-white text-sm transition-colors">Política de Privacidade</a>
+            <a href="#" class="text-gray-500 hover:text-white text-sm transition-colors">Termos de Uso</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <a href="#" class="fixed bottom-6 right-6 w-16 h-16 bg-green-500 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition-colors duration-300 z-50 cursor-pointer">
+      <i class="fab fa-whatsapp text-white text-3xl"></i>
+    </a>
+    
+  </body>
+</html>
