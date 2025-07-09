@@ -59,6 +59,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -84,7 +86,7 @@
           <img src="images/Fmm-Logo-4.png" alt="Dra. Fabiana Meneghelli" class="h-16" />
         </a>
         <div class="hidden md:flex items-center space-x-4">
-          <a href="#depoimentos" class="hover:text-gold transition duration-300">Depoimentos</a>
+          <!-- <a href="#depoimentos" class="hover:text-gold transition duration-300">Depoimentos</a> -->
           <a href="#contato" class="hover:text-gold transition duration-300">Contato</a>
           <a href="http://wa.me/5547991626678?text=Olá%2C%20gostaria%20de%20agendar%20uma%20consulta." class="ml-4 bg-gold text-white px-5 py-2 rounded-full text-sm hover:bg-opacity-90 transition">
             Agendar Consulta
@@ -121,8 +123,8 @@
               <a href="http://wa.me/5547991626678?text=Olá%2C%20gostaria%20de%20agendar%20uma%20consulta." class="bg-gold text-white px-8 py-3 rounded-full text-sm font-medium hover:bg-opacity-90 transition-all duration-300">
                 Agendar Consulta
               </a>
-              <a href="servicos.html" class="bg-gold text-white px-8 py-3 rounded-full text-sm font-medium hover:bg-opacity-90 transition inline-block">
-                Conheça Nossos Serviços
+              <a href="#servicos" class="bg-gold text-white px-8 py-3 rounded-full text-sm font-medium hover:bg-opacity-90 transition inline-block">
+                Nossos Serviços
               </a>
             </div>
           </div>
@@ -159,7 +161,7 @@
                 </div>
                 <div class="flex items-center">
                   <i class="fas fa-user-md text-gold mr-2"></i>
-                  <span class="text-gray-700 text-sm">Mais de 5.000 procedimentos realizados</span>
+                  <span class="text-gray-700 text-sm">Mais de 2.000 procedimentos realizados</span>
                 </div>
               </div>
             </div>
@@ -169,110 +171,98 @@
 
 
       <!-- SERVICOS -->
-      <section id="servicos" class="py-20">
+      <section id="servicos" class="py-20 bg-white">
         <div class="container mx-auto px-4">
           <div class="text-center mb-16">
             <h2 class="text-3xl md:text-4xl font-serif text-gray-800 mb-4">Nossos Serviços</h2>
             <div class="w-20 h-1 bg-gold mx-auto mb-6"></div>
             <p class="text-gray-600 max-w-2xl mx-auto">
-              Oferecemos tratamentos personalizados que valorizam sua beleza natural, com técnicas avançadas e produtos de alta qualidade.
+              Tratamentos personalizados que valorizam sua beleza natural com técnicas avançadas e produtos de alta qualidade.
             </p>
           </div>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Serviço 1 -->
-            <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 border border-gray-100">
-              <div class="w-16 h-16 bg-[#FDF9F6] rounded-full flex items-center justify-center mb-6">
-                <i class="fas fa-magic text-gold text-2xl"></i>
+          <!-- Swiper -->
+          <div class="swiper services-swiper">
+            <div class="swiper-wrapper">
+              <!-- Slide 1 -->
+              <div class="swiper-slide">
+                <div class="bg-white p-8 rounded-lg shadow-sm border h-full flex flex-col">
+                  <img src="images/servicos/harmonizacao-facial.jpg" alt="Harmonização Facial" class="w-full h-50 object-cover rounded-md mb-4" />
+                  <h3 class="text-xl font-serif text-gray-800 mb-4">Harmonização Facial</h3>
+                  <p class="text-gray-600 mb-6 flex-1">Conjunto de procedimentos que visam equilibrar os traços faciais, proporcionando resultados naturais e harmônicos, respeitando as características individuais.</p>
+                  <!-- <a href="#" class="text-gold font-medium inline-flex items-center mt-auto">Saiba mais <i class="fas fa-arrow-right ml-2 text-sm"></i></a> -->
+                </div>
               </div>
-              <h3 class="text-xl font-serif text-gray-800 mb-4">Harmonização Facial</h3>
-              <p class="text-gray-600 mb-6">
-                Conjunto de procedimentos que visam equilibrar os traços faciais, proporcionando resultados naturais e harmônicos, respeitando as características individuais.
-              </p>
-              <a href="#" class="text-gold font-medium inline-flex items-center cursor-pointer">
-                Saiba mais <i class="fas fa-arrow-right ml-2 text-sm"></i>
-              </a>
+              <!-- Slide 2 -->
+              <div class="swiper-slide">
+                <div class="bg-white p-8 rounded-lg shadow-sm border h-full flex flex-col">
+                  <img src="images/servicos/toxina-botulinica.jpg" alt="Toxina Botulínica" class="w-full h-50 object-cover rounded-md mb-4" />
+                  <h3 class="text-xl font-serif text-gray-800 mb-4">Toxina Botulínica</h3>
+                  <p class="text-gray-600 mb-6 flex-1">Tratamento que suaviza linhas de expressão e previne o envelhecimento, proporcionando um aspecto rejuvenescido sem perder a naturalidade das expressões.</p>
+                  <!-- <a href="#" class="text-gold font-medium inline-flex items-center mt-auto">Saiba mais <i class="fas fa-arrow-right ml-2 text-sm"></i></a> -->
+                </div>
+              </div>
+              <!-- Slide 3 -->
+              <div class="swiper-slide">
+                <div class="bg-white p-8 rounded-lg shadow-sm border h-full flex flex-col">
+                  <img src="images/servicos/preenchimento-labial.jpg" alt="Preenchimento Labial" class="w-full h-50 object-cover rounded-md mb-4" />
+                  <h3 class="text-xl font-serif text-gray-800 mb-4">Preenchimento Labial</h3>
+                  <p class="text-gray-600 mb-6 flex-1">Recupera o volume facial perdido com o tempo, preenche sulcos e melhora o contorno, devolvendo a jovialidade com resultados imediatos.</p>
+                  <!-- <a href="#" class="text-gold font-medium inline-flex items-center mt-auto">Saiba mais <i class="fas fa-arrow-right ml-2 text-sm"></i></a> -->
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-white p-8 rounded-lg shadow-sm border h-full flex flex-col">
+                  <img src="images/servicos/preenchimento-olheira.jpg" alt="Preenchimento Olheira" class="w-full h-50 object-cover rounded-md mb-4" />
+                  <h3 class="text-xl font-serif text-gray-800 mb-4">Preenchimento Olheira</h3>
+                  <p class="text-gray-600 mb-6 flex-1">Recupera o volume facial perdido com o tempo, preenche sulcos e melhora o contorno, devolvendo a jovialidade com resultados imediatos.</p>
+                  <!-- <a href="#" class="text-gold font-medium inline-flex items-center mt-auto">Saiba mais <i class="fas fa-arrow-right ml-2 text-sm"></i></a> -->
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-white p-8 rounded-lg shadow-sm border h-full flex flex-col">
+                  <img src="images/servicos/preenchimento-malar-e-mento.jpg" alt="Preenchimento de Malar e Mento" class="w-full h-50 object-cover rounded-md mb-4" />
+                  <h3 class="text-xl font-serif text-gray-800 mb-4">Preenchimento de Malar e Mento</h3>
+                  <p class="text-gray-600 mb-6 flex-1">Recupera o volume facial perdido com o tempo, preenche sulcos e melhora o contorno, devolvendo a jovialidade com resultados imediatos.</p>
+                  <!-- <a href="#" class="text-gold font-medium inline-flex items-center mt-auto">Saiba mais <i class="fas fa-arrow-right ml-2 text-sm"></i></a> -->
+                </div>
+              </div>
+              <!-- Slide 4 -->
+              <div class="swiper-slide">
+                <div class="bg-white p-8 rounded-lg shadow-sm border h-full flex flex-col">
+                  <img src="images/servicos/bioestimulador-de-colageno.jpg" alt="Bioestimulador de Colágeno" class="w-full h-50 object-cover rounded-md mb-4" />
+                  <h3 class="text-xl font-serif text-gray-800 mb-4">Bioestimulador de Colágeno</h3>
+                  <p class="text-gray-600 mb-6 flex-1">Estimula a produção natural de colágeno, melhorando a firmeza e elasticidade da pele, com resultados progressivos e duradouros.</p>
+                  <!-- <a href="#" class="text-gold font-medium inline-flex items-center mt-auto">Saiba mais <i class="fas fa-arrow-right ml-2 text-sm"></i></a> -->
+                </div>
+              </div>
+              <!-- Slide 5 -->
+              <div class="swiper-slide">
+                <div class="bg-white p-8 rounded-lg shadow-sm border h-full flex flex-col">
+                  <img src="images/servicos/skinbooster.jpg" alt="Skinbooster" class="w-full h-50 object-cover rounded-md mb-4" />
+                  <h3 class="text-xl font-serif text-gray-800 mb-4">Skinbooster</h3>
+                  <p class="text-gray-600 mb-6 flex-1">Hidratação profunda que melhora a qualidade da pele, aumentando sua luminosidade, textura e elasticidade, ideal para todos os tipos de pele.</p>
+                  <!-- <a href="#" class="text-gold font-medium inline-flex items-center mt-auto">Saiba mais <i class="fas fa-arrow-right ml-2 text-sm"></i></a> -->
+                </div>
+              </div>
+              <!-- Slide 5 -->
+              <div class="swiper-slide">
+                <div class="bg-white p-8 rounded-lg shadow-sm border h-full flex flex-col">
+                  <img src="images/servicos/cuidados-com-a-pele.jpg" alt="Cuidados com a Pele" class="w-full h-50 object-cover rounded-md mb-4" />
+                  <h3 class="text-xl font-serif text-gray-800 mb-4">Cuidados com a Pele</h3>
+                  <p class="text-gray-600 mb-6 flex-1">Protocolos personalizados para tratamento e prevenção de problemas cutâneos, com produtos e técnicas avançadas para uma pele saudável.</p>
+                  <!-- <a href="#" class="text-gold font-medium inline-flex items-center mt-auto">Saiba mais <i class="fas fa-arrow-right ml-2 text-sm"></i></a> -->
+                </div>
+              </div>
             </div>
 
-            <!-- Serviço 2 -->
-            <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 border border-gray-100">
-              <div class="w-16 h-16 bg-[#FDF9F6] rounded-full flex items-center justify-center mb-6">
-                <i class="fas fa-syringe text-gold text-2xl"></i>
-              </div>
-              <h3 class="text-xl font-serif text-gray-800 mb-4">Toxina Botulínica</h3>
-              <p class="text-gray-600 mb-6">
-                Tratamento que suaviza linhas de expressão e previne o envelhecimento, proporcionando um aspecto rejuvenescido sem perder a naturalidade das expressões.
-              </p>
-              <a href="#" class="text-gold font-medium inline-flex items-center cursor-pointer">
-                Saiba mais <i class="fas fa-arrow-right ml-2 text-sm"></i>
-              </a>
-            </div>
-
-            <!-- Serviço 3 -->
-            <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 border border-gray-100">
-              <div class="w-16 h-16 bg-[#FDF9F6] rounded-full flex items-center justify-center mb-6">
-                <i class="fas fa-fill-drip text-gold text-2xl"></i>
-              </div>
-              <h3 class="text-xl font-serif text-gray-800 mb-4">Preenchimento Facial</h3>
-              <p class="text-gray-600 mb-6">
-                Recupera o volume facial perdido com o tempo, preenche sulcos e melhora o contorno, devolvendo a jovialidade com resultados imediatos.
-              </p>
-              <a href="#" class="text-gold font-medium inline-flex items-center cursor-pointer">
-                Saiba mais <i class="fas fa-arrow-right ml-2 text-sm"></i>
-              </a>
-            </div>
-
-            <!-- Serviço 4 -->
-            <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 border border-gray-100">
-              <div class="w-16 h-16 bg-[#FDF9F6] rounded-full flex items-center justify-center mb-6">
-                <i class="fas fa-dna text-gold text-2xl"></i>
-              </div>
-              <h3 class="text-xl font-serif text-gray-800 mb-4">Bioestimulador de Colágeno</h3>
-              <p class="text-gray-600 mb-6">
-                Estimula a produção natural de colágeno, melhorando a firmeza e elasticidade da pele, com resultados progressivos e duradouros.
-              </p>
-              <a href="#" class="text-gold font-medium inline-flex items-center cursor-pointer">
-                Saiba mais <i class="fas fa-arrow-right ml-2 text-sm"></i>
-              </a>
-            </div>
-
-            <!-- Serviço 5 -->
-            <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 border border-gray-100">
-              <div class="w-16 h-16 bg-[#FDF9F6] rounded-full flex items-center justify-center mb-6">
-                <i class="fas fa-tint text-gold text-2xl"></i>
-              </div>
-              <h3 class="text-xl font-serif text-gray-800 mb-4">Skinbooster</h3>
-              <p class="text-gray-600 mb-6">
-                Hidratação profunda que melhora a qualidade da pele, aumentando sua luminosidade, textura e elasticidade, ideal para todos os tipos de pele.
-              </p>
-              <a href="#" class="text-gold font-medium inline-flex items-center cursor-pointer">
-                Saiba mais <i class="fas fa-arrow-right ml-2 text-sm"></i>
-              </a>
-            </div>
-
-            <!-- Serviço 6 -->
-            <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 border border-gray-100">
-              <div class="w-16 h-16 bg-[#FDF9F6] rounded-full flex items-center justify-center mb-6">
-                <i class="fas fa-spa text-gold text-2xl"></i>
-              </div>
-              <h3 class="text-xl font-serif text-gray-800 mb-4">Cuidados com a Pele</h3>
-              <p class="text-gray-600 mb-6">
-                Protocolos personalizados para tratamento e prevenção de problemas cutâneos, com produtos e técnicas avançadas para uma pele saudável.
-              </p>
-              <a href="#" class="text-gold font-medium inline-flex items-center cursor-pointer">
-                Saiba mais <i class="fas fa-arrow-right ml-2 text-sm"></i>
-              </a>
-            </div>
-          </div>
-
-          <div class="text-center mt-12">
-            <a href="servicos.html" class="bg-gold text-white px-8 py-3 rounded-full text-sm font-medium hover:bg-opacity-90 transition inline-block">
-              Ver Todos os Serviços
-            </a>
+            <!-- Navigation -->
+            <div class="swiper-button-next text-gold hover:text-gold/80"></div>
+            <div class="swiper-button-prev text-gold hover:text-gold/80"></div>
+            <div class="swiper-pagination mt-8"></div>
           </div>
         </div>
       </section>
-
 
       <!-- DIFERENCIAS -->
       <section id="diferenciais" class="py-20 bg-[#FDF9F6]">
@@ -330,9 +320,9 @@
                 <p class="text-gray-600 mb-6">
                   Nossa abordagem integra técnicas avançadas com um olhar humanizado, criando uma jornada de transformação que vai além da estética, promovendo bem-estar e autoconfiança.
                 </p>
-                <a href="filosofia.html"  class="bg-gold text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-opacity-90 transition">
+                <!-- <a href="filosofia.html"  class="bg-gold text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-opacity-90 transition">
                   Conheça Nossa Filosofia
-                </a>
+                </a> -->
               </div>
               <div class="md:w-5/12">
                 <img 
@@ -342,100 +332,6 @@
                 />
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-
-      <!-- DEPOIMENTOS -->
-      <section id="depoimentos" class="py-20">
-        <div class="container mx-auto px-4">
-          <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl font-serif text-gray-800 mb-4">Depoimentos</h2>
-            <div class="w-20 h-1 bg-gold mx-auto mb-6"></div>
-            <p class="text-gray-600 max-w-2xl mx-auto">
-              O que nossas pacientes dizem sobre suas experiências e resultados.
-            </p>
-          </div>
-
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Depoimento 1 -->
-            <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
-              <div class="text-gold text-4xl font-serif mb-6">"</div>
-              <p class="text-gray-600 italic mb-6">
-                Encontrei na Dra. Fabiana uma profissional que realmente entendeu o que eu queria. Os resultados foram naturais e todos perceberam como estou mais radiante, sem exageros. Me sinto mais confiante e feliz.
-              </p>
-              <div class="flex items-center">
-                <div class="w-12 h-12 bg-[#F7E6E6] rounded-full flex items-center justify-center mr-4">
-                  <span class="text-gold font-medium">CM</span>
-                </div>
-                <div>
-                  <h4 class="text-gray-800 font-medium">Carolina Mendes</h4>
-                  <p class="text-gray-500 text-sm">42 anos, empresária</p>
-                </div>
-              </div>
-              <div class="mt-4 flex text-gold">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-            </div>
-
-            <!-- Depoimento 2 -->
-            <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
-              <div class="text-gold text-4xl font-serif mb-6">"</div>
-              <p class="text-gray-600 italic mb-6">
-                Depois de pesquisar muito, escolhi a clínica da Dra. Fabiana e não me arrependo. O ambiente é acolhedor, o atendimento é impecável e os resultados superaram minhas expectativas. Recomendo a todas as minhas amigas.
-              </p>
-              <div class="flex items-center">
-                <div class="w-12 h-12 bg-[#F7E6E6] rounded-full flex items-center justify-center mr-4">
-                  <span class="text-gold font-medium">LS</span>
-                </div>
-                <div>
-                  <h4 class="text-gray-800 font-medium">Luciana Santos</h4>
-                  <p class="text-gray-500 text-sm">35 anos, advogada</p>
-                </div>
-              </div>
-              <div class="mt-4 flex text-gold">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-            </div>
-
-            <!-- Depoimento 3 -->
-            <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
-              <div class="text-gold text-4xl font-serif mb-6">"</div>
-              <p class="text-gray-600 italic mb-6">
-                Tinha receio de fazer procedimentos estéticos, mas a Dra. Fabiana me deixou muito segura. O resultado foi tão natural que ninguém percebeu que fiz algo, apenas comentam como estou bem e descansada.
-              </p>
-              <div class="flex items-center">
-                <div class="w-12 h-12 bg-[#F7E6E6] rounded-full flex items-center justify-center mr-4">
-                  <span class="text-gold font-medium">RF</span>
-                </div>
-                <div>
-                  <h4 class="text-gray-800 font-medium">Renata Ferreira</h4>
-                  <p class="text-gray-500 text-sm">29 anos, jornalista</p>
-                </div>
-              </div>
-              <div class="mt-4 flex text-gold">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-            </div>
-          </div>
-
-          <div class="text-center mt-12">
-            <button class="border border-gold text-gold px-8 py-3 rounded-full text-sm font-medium hover:bg-gold hover:text-white transition">
-              Ver Mais Depoimentos
-            </button>
           </div>
         </div>
       </section>
@@ -550,9 +446,6 @@
                     <a href="#" class="w-10 h-10 bg-[#FDF9F6] rounded-full flex items-center justify-center hover:bg-gold hover:text-white transition-all">
                       <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a href="#" class="w-10 h-10 bg-[#FDF9F6] rounded-full flex items-center justify-center hover:bg-gold hover:text-white transition-all">
-                      <i class="fab fa-youtube"></i>
-                    </a>
                   </div>
                 </div>
               </div>
@@ -624,9 +517,6 @@
               <a href="#" class="hover:text-white transition-colors">
                 <i class="fab fa-facebook-f text-xl"></i>
               </a>
-              <a href="#" class="hover:text-white transition-colors">
-                <i class="fab fa-youtube text-xl"></i>
-              </a>
             </div>
           </div>
     
@@ -636,9 +526,8 @@
             <ul class="space-y-3">
               <li><a href="#sobre" class="hover:text-white transition-colors">Sobre</a></li>
               <li><a href="#servicos" class="hover:text-white transition-colors">Serviços</a></li>
-              <li><a href="#depoimentos" class="hover:text-white transition-colors">Depoimentos</a></li>
               <li><a href="#contato" class="hover:text-white transition-colors">Contato</a></li>
-              <li><a href="#" class="hover:text-white transition-colors">Blog</a></li>
+              <!-- <li><a href="#" class="hover:text-white transition-colors">Blog</a></li> -->
             </ul>
           </div>
     
@@ -646,11 +535,11 @@
           <div class="mb-8 md:mb-0 md:w-1/5">
             <h4 class="text-lg font-medium mb-4">Serviços</h4>
             <ul class="space-y-3">
-              <li><a href="#" class="hover:text-white transition-colors">Harmonização Facial</a></li>
-              <li><a href="#" class="hover:text-white transition-colors">Toxina Botulínica</a></li>
-              <li><a href="#" class="hover:text-white transition-colors">Preenchimento</a></li>
-              <li><a href="#" class="hover:text-white transition-colors">Bioestimulador</a></li>
-              <li><a href="#" class="hover:text-white transition-colors">Skinbooster</a></li>
+              <li><a href="#servicos" class="hover:text-white transition-colors">Harmonização Facial</a></li>
+              <li><a href="#servicos" class="hover:text-white transition-colors">Toxina Botulínica</a></li>
+              <li><a href="#servicos" class="hover:text-white transition-colors">Preenchimento</a></li>
+              <li><a href="#servicos" class="hover:text-white transition-colors">Bioestimulador</a></li>
+              <li><a href="#servicos" class="hover:text-white transition-colors">Skinbooster</a></li>
             </ul>
           </div>
     
@@ -678,17 +567,42 @@
           <p class="text-sm mb-4 md:mb-0">
             &copy; 2025 Dra. Fabiana Meneghelli. Todos os direitos reservados.
           </p>
-          <div class="flex space-x-6">
+          <!-- <div class="flex space-x-6">
             <a href="#" class="hover:text-white text-sm transition-colors">Política de Privacidade</a>
             <a href="#" class="hover:text-white text-sm transition-colors">Termos de Uso</a>
-          </div>
+          </div> -->
         </div>
       </div>
     </footer>
     
-    <a href="http://wa.me/5547991626678?text=Olá%2C%20gostaria%20de%20agendar%20uma%20consulta." class="fixed bottom-6 right-6 w-16 h-16 bg-green-500 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition-colors duration-300 z-50 cursor-pointer">
+    <a href="http://wa.me/5547991626678?text=Olá%2C%20gostaria%20de%20agendar%20uma%20consulta!" class="fixed bottom-6 right-6 w-16 h-16 bg-green-500 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition-colors duration-300 z-50 cursor-pointer">
       <i class="fab fa-whatsapp text-white text-3xl"></i>
     </a>
+
+
+    <!-- SwiperJS Script -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      new Swiper(".services-swiper", {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 24,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+        },
+      });
+    });
+  </script>
     
   </body>
 </html>
